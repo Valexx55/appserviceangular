@@ -3,16 +3,23 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ServicioComunicador } from './serviciocom.service';
+import { HijoUno } from './hijouno.component';
+import { HijoDos } from './hijodos.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HijoUno,
+    HijoDos
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ServicioComunicador],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
